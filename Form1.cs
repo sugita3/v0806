@@ -37,14 +37,14 @@ namespace v0806
                  vy = 10;
 
              }
-             if (label1.Top > 261)
-             {
-                 vy = -10;
-
-             }
-             if (label1.Left > 284)
+             if (label1.Right > ClientSize.Width)
              {
                  vx = -10;
+
+             }
+             if (label1.Bottom > ClientSize.Height)
+             {
+                 vy = -10;
 
              }
              string t = label1.Text;
